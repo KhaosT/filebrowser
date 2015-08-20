@@ -8,7 +8,7 @@
 
 #import "FBAppDelegate.h"
 #import "FBFilesTableViewController.h"
-
+#import "FBWatchFilesTableViewController.h"
 #include <sys/stat.h>
 
 NSString *startingPath = @"/";
@@ -25,10 +25,14 @@ NSString *startingPath = @"/";
     [self.window makeKeyAndVisible];
 	
 	FBFilesTableViewController *startingVC = [[FBFilesTableViewController alloc] initWithPath:startingPath];
+	UINavigationController *phoneNavController = [[UINavigationController alloc] initWithRootViewController:startingVC];
 	
-	UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:startingVC];
-	
-	self.window.rootViewController = navController;
+    FBWatchFilesTableViewController *startingWatchVC = [[FBWatchFilesTableViewController alloc] initWithPath:startingPath];
+    UINavigationController *watchNavController = [[UINavigationController alloc] initWithRootViewController:startingWatchVC];
+    
+    UITabBarController *tabBarController = [[UITabBarController alloc] init];
+    tabBarController.viewControllers = [NSArray arrayWithObjects:phoneNavController, watchNavController, nil];
+	self.window.rootViewController = tabBarController;
 	
     return YES;
 }
