@@ -12,4 +12,5 @@
 @interface FBConnectivity : NSObject <WCSessionDelegate>
 + (FBConnectivity *)sharedInstance;
 - (void)requestContentsFromFolder:(NSString *)path;
+- (void)requestFileAtPath:(NSString *)path;
 @end

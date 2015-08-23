@@ -9,6 +9,6 @@
 #import "FBFilesTableViewController.h"
 #import "FBConnectivity.h"
 
-@interface FBWatchFilesTableViewController : FBFilesTableViewController
+@interface FBWatchFilesTableViewController : FBFilesTableViewController <QLPreviewControllerDataSource>
 
 @end
