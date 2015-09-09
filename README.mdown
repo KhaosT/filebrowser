@@ -11,3 +11,5 @@ What is this?
 =============
 
 Really simple File Browser for iOS; allows you browse the filesystem and retrieve files using iMessage or AirDrop.
+
+Since I was asked, I guess it's worth noting: The WatchKit extension will NOT wake up the app on the Apple Watch to retrieve data. The app must be opened on the watch and kept awake during usage (running from Xcode directly seems to keep the watch awake as long as a debug session is going).
