@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		124866471B856AFE00652369 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 124866451B856AFE00652369 /* Interface.storyboard */; };
+		124866491B856AFE00652369 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 124866481B856AFE00652369 /* Assets.xcassets */; };
+		124866501B856AFE00652369 /* FBWatch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 1248664F1B856AFE00652369 /* FBWatch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		124866561B856AFE00652369 /* InterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 124866551B856AFE00652369 /* InterfaceController.m */; };
+		124866591B856AFE00652369 /* ExtensionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 124866581B856AFE00652369 /* ExtensionDelegate.m */; };
+		1248665B1B856AFE00652369 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1248665A1B856AFE00652369 /* Assets.xcassets */; };
+		1248665F1B856AFE00652369 /* FBWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 124866431B856AFE00652369 /* FBWatch.app */; };
+		1248666B1B8571F600652369 /* phone.png in Resources */ = {isa = PBXBuildFile; fileRef = 1248666A1B8571F600652369 /* phone.png */; };
+		1248666E1B8572E000652369 /* FBWatchFilesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1248666D1B8572E000652369 /* FBWatchFilesTableViewController.m */; };
+		124866701B85747400652369 /* watch@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1248666F1B85747400652369 /* watch@2x.png */; };
+		124866741B857A2200652369 /* FBConnectivity.m in Sources */ = {isa = PBXBuildFile; fileRef = 124866731B857A2200652369 /* FBConnectivity.m */; };
+		124866761B857A5F00652369 /* WatchConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 124866751B857A5F00652369 /* WatchConnectivity.framework */; };
 		B00D24B519D96A0800F66D2D /* FBCustomPreviewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B00D24B419D96A0800F66D2D /* FBCustomPreviewController.m */; };
 		B03C5EFA1771107F00295DD2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B03C5EF91771107F00295DD2 /* Foundation.framework */; };
 		B03C5EFC1771107F00295DD2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B03C5EFB1771107F00295DD2 /* CoreGraphics.framework */; };
@@ -18,7 +30,67 @@
 		B03C5F2A177110B400295DD2 /* FBFilesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B03C5F29177110B400295DD2 /* FBFilesTableViewController.m */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		124866511B856AFE00652369 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B03C5EEE1771107F00295DD2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1248664E1B856AFE00652369;
+			remoteInfo = "FBWatch Extension";
+		};
+		1248665D1B856AFE00652369 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B03C5EEE1771107F00295DD2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 124866421B856AFE00652369;
+			remoteInfo = FBWatch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		124866631B856AFE00652369 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				124866501B856AFE00652369 /* FBWatch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		124866671B856AFE00652369 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				1248665F1B856AFE00652369 /* FBWatch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		124866431B856AFE00652369 /* FBWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FBWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		124866461B856AFE00652369 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		124866481B856AFE00652369 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1248664A1B856AFE00652369 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1248664F1B856AFE00652369 /* FBWatch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "FBWatch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		124866541B856AFE00652369 /* InterfaceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterfaceController.h; sourceTree = "<group>"; };
+		124866551B856AFE00652369 /* InterfaceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterfaceController.m; sourceTree = "<group>"; };
+		124866571B856AFE00652369 /* ExtensionDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExtensionDelegate.h; sourceTree = "<group>"; };
+		124866581B856AFE00652369 /* ExtensionDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExtensionDelegate.m; sourceTree = "<group>"; };
+		1248665A1B856AFE00652369 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1248665C1B856AFE00652369 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1248666A1B8571F600652369 /* phone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = phone.png; sourceTree = "<group>"; };
+		1248666C1B8572E000652369 /* FBWatchFilesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBWatchFilesTableViewController.h; sourceTree = "<group>"; };
+		1248666D1B8572E000652369 /* FBWatchFilesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBWatchFilesTableViewController.m; sourceTree = "<group>"; };
+		1248666F1B85747400652369 /* watch@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "watch@2x.png"; sourceTree = "<group>"; };
+		124866721B857A2200652369 /* FBConnectivity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBConnectivity.h; sourceTree = "<group>"; };
+		124866731B857A2200652369 /* FBConnectivity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBConnectivity.m; sourceTree = "<group>"; };
+		124866751B857A5F00652369 /* WatchConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WatchConnectivity.framework; path = System/Library/Frameworks/WatchConnectivity.framework; sourceTree = SDKROOT; };
 		B00D24B319D96A0800F66D2D /* FBCustomPreviewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBCustomPreviewController.h; sourceTree = "<group>"; };
 		B00D24B419D96A0800F66D2D /* FBCustomPreviewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBCustomPreviewController.m; sourceTree = "<group>"; };
 		B03C5EF61771107F00295DD2 /* FileBrowser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FileBrowser.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -41,10 +113,18 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		1248664C1B856AFE00652369 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B03C5EF31771107F00295DD2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				124866761B857A5F00652369 /* WatchConnectivity.framework in Frameworks */,
 				B03C5EFC1771107F00295DD2 /* CoreGraphics.framework in Frameworks */,
 				B03C5EFE1771107F00295DD2 /* UIKit.framework in Frameworks */,
 				B03C5EFA1771107F00295DD2 /* Foundation.framework in Frameworks */,
@@ -54,11 +134,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		124866441B856AFE00652369 /* FBWatch */ = {
+			isa = PBXGroup;
+			children = (
+				124866451B856AFE00652369 /* Interface.storyboard */,
+				124866481B856AFE00652369 /* Assets.xcassets */,
+				1248664A1B856AFE00652369 /* Info.plist */,
+			);
+			path = FBWatch;
+			sourceTree = "<group>";
+		};
+		124866531B856AFE00652369 /* FBWatch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				124866541B856AFE00652369 /* InterfaceController.h */,
+				124866551B856AFE00652369 /* InterfaceController.m */,
+				124866571B856AFE00652369 /* ExtensionDelegate.h */,
+				124866581B856AFE00652369 /* ExtensionDelegate.m */,
+				1248665A1B856AFE00652369 /* Assets.xcassets */,
+				1248665C1B856AFE00652369 /* Info.plist */,
+			);
+			path = "FBWatch Extension";
+			sourceTree = "<group>";
+		};
 		B03C5EED1771107F00295DD2 = {
 			isa = PBXGroup;
 			children = (
 				B03C5EFF1771107F00295DD2 /* FileBrowser */,
 				B03C5F181771107F00295DD2 /* FileBrowserTests */,
+				124866441B856AFE00652369 /* FBWatch */,
+				124866531B856AFE00652369 /* FBWatch Extension */,
 				B03C5EF81771107F00295DD2 /* Frameworks */,
 				B03C5EF71771107F00295DD2 /* Products */,
 			);
@@ -68,6 +173,8 @@
 			isa = PBXGroup;
 			children = (
 				B03C5EF61771107F00295DD2 /* FileBrowser.app */,
+				124866431B856AFE00652369 /* FBWatch.app */,
+				1248664F1B856AFE00652369 /* FBWatch Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -75,6 +182,7 @@
 		B03C5EF81771107F00295DD2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				124866751B857A5F00652369 /* WatchConnectivity.framework */,
 				B03C5EF91771107F00295DD2 /* Foundation.framework */,
 				B03C5EFB1771107F00295DD2 /* CoreGraphics.framework */,
 				B03C5EFD1771107F00295DD2 /* UIKit.framework */,
@@ -90,6 +198,10 @@
 				B03C5F091771107F00295DD2 /* FBAppDelegate.m */,
 				B03C5F28177110B400295DD2 /* FBFilesTableViewController.h */,
 				B03C5F29177110B400295DD2 /* FBFilesTableViewController.m */,
+				124866721B857A2200652369 /* FBConnectivity.h */,
+				124866731B857A2200652369 /* FBConnectivity.m */,
+				1248666C1B8572E000652369 /* FBWatchFilesTableViewController.h */,
+				1248666D1B8572E000652369 /* FBWatchFilesTableViewController.m */,
 				B00D24B319D96A0800F66D2D /* FBCustomPreviewController.h */,
 				B00D24B419D96A0800F66D2D /* FBCustomPreviewController.m */,
 				B03C5F0B1771107F00295DD2 /* Images.xcassets */,
@@ -101,6 +213,8 @@
 		B03C5F001771107F00295DD2 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				1248666A1B8571F600652369 /* phone.png */,
+				1248666F1B85747400652369 /* watch@2x.png */,
 				B03C5F011771107F00295DD2 /* FileBrowser-Info.plist */,
 				B03C5F021771107F00295DD2 /* InfoPlist.strings */,
 				B03C5F051771107F00295DD2 /* main.m */,
@@ -130,6 +244,40 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		124866421B856AFE00652369 /* FBWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 124866641B856AFE00652369 /* Build configuration list for PBXNativeTarget "FBWatch" */;
+			buildPhases = (
+				124866411B856AFE00652369 /* Resources */,
+				124866631B856AFE00652369 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				124866521B856AFE00652369 /* PBXTargetDependency */,
+			);
+			name = FBWatch;
+			productName = FBWatch;
+			productReference = 124866431B856AFE00652369 /* FBWatch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		1248664E1B856AFE00652369 /* FBWatch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 124866601B856AFE00652369 /* Build configuration list for PBXNativeTarget "FBWatch Extension" */;
+			buildPhases = (
+				1248664B1B856AFE00652369 /* Sources */,
+				1248664C1B856AFE00652369 /* Frameworks */,
+				1248664D1B856AFE00652369 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "FBWatch Extension";
+			productName = "FBWatch Extension";
+			productReference = 1248664F1B856AFE00652369 /* FBWatch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
 		B03C5EF51771107F00295DD2 /* FileBrowser */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = B03C5F221771107F00295DD2 /* Build configuration list for PBXNativeTarget "FileBrowser" */;
@@ -137,10 +285,12 @@
 				B03C5EF21771107F00295DD2 /* Sources */,
 				B03C5EF31771107F00295DD2 /* Frameworks */,
 				B03C5EF41771107F00295DD2 /* Resources */,
+				124866671B856AFE00652369 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				1248665E1B856AFE00652369 /* PBXTargetDependency */,
 			);
 			name = FileBrowser;
 			productName = FileBrowser;
@@ -156,6 +306,40 @@
 				CLASSPREFIX = FB;
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "High Caffeine Content";
+				TargetAttributes = {
+					124866421B856AFE00652369 = {
+						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = SL8E63CST5;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 0;
+							};
+						};
+					};
+					1248664E1B856AFE00652369 = {
+						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = SL8E63CST5;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 0;
+							};
+							com.apple.Keychain = {
+								enabled = 0;
+							};
+						};
+					};
+					B03C5EF51771107F00295DD2 = {
+						DevelopmentTeam = SL8E63CST5;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 0;
+							};
+							com.apple.Keychain = {
+								enabled = 0;
+							};
+						};
+					};
+				};
 			};
 			buildConfigurationList = B03C5EF11771107F00295DD2 /* Build configuration list for PBXProject "FileBrowser" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -163,6 +347,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = B03C5EED1771107F00295DD2;
 			productRefGroup = B03C5EF71771107F00295DD2 /* Products */;
@@ -170,28 +355,60 @@
 			projectRoot = "";
 			targets = (
 				B03C5EF51771107F00295DD2 /* FileBrowser */,
+				124866421B856AFE00652369 /* FBWatch */,
+				1248664E1B856AFE00652369 /* FBWatch Extension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		124866411B856AFE00652369 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				124866491B856AFE00652369 /* Assets.xcassets in Resources */,
+				124866471B856AFE00652369 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1248664D1B856AFE00652369 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1248665B1B856AFE00652369 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B03C5EF41771107F00295DD2 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				124866701B85747400652369 /* watch@2x.png in Resources */,
 				B03C5F041771107F00295DD2 /* InfoPlist.strings in Resources */,
 				B03C5F0C1771107F00295DD2 /* Images.xcassets in Resources */,
+				1248666B1B8571F600652369 /* phone.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		1248664B1B856AFE00652369 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				124866591B856AFE00652369 /* ExtensionDelegate.m in Sources */,
+				124866561B856AFE00652369 /* InterfaceController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B03C5EF21771107F00295DD2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				B03C5F2A177110B400295DD2 /* FBFilesTableViewController.m in Sources */,
+				1248666E1B8572E000652369 /* FBWatchFilesTableViewController.m in Sources */,
+				124866741B857A2200652369 /* FBConnectivity.m in Sources */,
 				B03C5F0A1771107F00295DD2 /* FBAppDelegate.m in Sources */,
 				B03C5F061771107F00295DD2 /* main.m in Sources */,
 				B00D24B519D96A0800F66D2D /* FBCustomPreviewController.m in Sources */,
@@ -200,7 +417,28 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		124866521B856AFE00652369 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1248664E1B856AFE00652369 /* FBWatch Extension */;
+			targetProxy = 124866511B856AFE00652369 /* PBXContainerItemProxy */;
+		};
+		1248665E1B856AFE00652369 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 124866421B856AFE00652369 /* FBWatch */;
+			targetProxy = 1248665D1B856AFE00652369 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
+		124866451B856AFE00652369 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				124866461B856AFE00652369 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
 		B03C5F021771107F00295DD2 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -220,6 +458,110 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		124866611B856AFE00652369 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = "FBWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.modoki.FileBrowser.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "aa06b1fb-f689-4ded-865a-da9f251a9ba6";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		124866621B856AFE00652369 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = "FBWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.modoki.FileBrowser.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "aa06b1fb-f689-4ded-865a-da9f251a9ba6";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		124866651B856AFE00652369 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				IBSC_MODULE = FBWatch_Extension;
+				INFOPLIST_FILE = FBWatch/Info.plist;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.modoki.FileBrowser.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		124866661B856AFE00652369 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				IBSC_MODULE = FBWatch_Extension;
+				INFOPLIST_FILE = FBWatch/Info.plist;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.modoki.FileBrowser.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
 		B03C5F201771107F00295DD2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -237,7 +579,7 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Steven Troughton-Smith (GF23LK2QK8)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -252,8 +594,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "aa06b1fb-f689-4ded-865a-da9f251a9ba6";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -276,7 +619,7 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Steven Troughton-Smith (GF23LK2QK8)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -285,7 +628,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PROVISIONING_PROFILE = "aa06b1fb-f689-4ded-865a-da9f251a9ba6";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -297,10 +641,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FileBrowser/FileBrowser-Prefix.pch";
 				INFOPLIST_FILE = "FileBrowser/FileBrowser-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.modoki.FileBrowser;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "aa06b1fb-f689-4ded-865a-da9f251a9ba6";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -310,10 +658,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FileBrowser/FileBrowser-Prefix.pch";
 				INFOPLIST_FILE = "FileBrowser/FileBrowser-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.modoki.FileBrowser;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "aa06b1fb-f689-4ded-865a-da9f251a9ba6";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -321,6 +673,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		124866601B856AFE00652369 /* Build configuration list for PBXNativeTarget "FBWatch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				124866611B856AFE00652369 /* Debug */,
+				124866621B856AFE00652369 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		124866641B856AFE00652369 /* Build configuration list for PBXNativeTarget "FBWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				124866651B856AFE00652369 /* Debug */,
+				124866661B856AFE00652369 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		B03C5EF11771107F00295DD2 /* Build configuration list for PBXProject "FileBrowser" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

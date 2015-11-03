@@ -19,10 +19,10 @@
 {
     self = [super initWithStyle:UITableViewStylePlain];
     if (self) {
-        
 		self.path = path;
-		
 		self.title = [path lastPathComponent];
+        self.tabBarItem.image = [UIImage imageNamed:@"phone"];
+        self.tabBarItem.title = @"Phone";
 		
 		NSError *error = nil;
 		NSArray *tempFiles = [[NSFileManager defaultManager] contentsOfDirectoryAtPath:path error:&error];
